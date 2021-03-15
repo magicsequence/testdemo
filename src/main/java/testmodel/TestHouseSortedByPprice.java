@@ -30,7 +30,7 @@ public class TestHouseSortedByPprice {
         list.add(house2);
         list.add(house3);
 
-
+        //升降序是可以改变的
         Collections.sort(list);
         System.out.println("用实现Comparable接口重写compareTo方法排序"+list.toString());
 
@@ -41,7 +41,7 @@ public class TestHouseSortedByPprice {
         //没排序前的状态
         for (int i = 0; i < list.size(); i++) {
             HouseInfo houseInfo = list.get(i);
-            System.out.println(houseInfo.toString());
+            //System.out.println(houseInfo.toString());
         }
 
         //默认升序，参数换个位置则为降序
@@ -51,7 +51,7 @@ public class TestHouseSortedByPprice {
                 return o2.getName().compareTo(o1.getName());
             }
         });
-        System.out.println("排序后----------"+list.toString());
+        //System.out.println("排序后----------"+list.toString());
 
 
 
