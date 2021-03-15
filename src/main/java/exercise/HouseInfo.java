@@ -53,6 +53,6 @@ public class HouseInfo implements Comparable<HouseInfo>,Serializable{
 
     @Override
     public int compareTo(HouseInfo o) {
-        return price.compareTo(o.getPrice());
+        return o.getPrice().compareTo(this.price);
     }
 }
